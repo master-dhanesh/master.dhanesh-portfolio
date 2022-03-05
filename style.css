@@ -1,0 +1,503 @@
+@font-face {
+    font-family: 'Shaloems';
+    src: url('/fonts/SHALOEMS.TTF');
+}
+
+@font-face {
+    font-family: 'Mont-Alt';
+    src: url('/fonts/MONTSERRATALTERNATES-EXTRALIGHT.TTF');
+}
+
+@font-face {
+    font-family: 'Gil';
+    src: url('./fonts/Gilroy/GILROY-BLACK.OTF');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gil';
+    src: url('./fonts/Gilroy/GILROY-SEMIBOLD.OTF');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gil';
+    src: url('./fonts/Gilroy/GILROY-MEDIUM.OTF');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gil';
+    src: url('./fonts/Gilroy/GILROY-REGULAR.OTF');
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    overflow-x: hidden ;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: .5vmax;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F2CC81;
+}
+
+/* ----------nav----------------- */
+
+nav {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vmax;
+    display: none;
+}
+
+.resume-btn {
+    padding: .9vmax 1.5vmax;
+    border-radius: 5vmax;
+    border: none;
+    color: #fff;
+    font: 500 1vmax "GIl";
+    box-shadow: 0 0 2vmax #FC626A;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #FE7D84, #FC626A);
+    transition: 1s all;
+}
+
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+nav>ul>li {
+    color: #4e4e4e;
+    cursor: pointer;
+    margin: 0 1vmax;
+    font: 500 1vmax "Gil";
+    transition: .5s all;
+}
+
+nav>ul>li:hover {
+    color: black;
+}
+
+.subscribe-mail {
+    position: relative;
+}
+
+.subscribe-mail>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    padding: 0 2vmax .3vmax .5vmax;
+    font: 500 1vmax "Gil";
+
+}
+
+.subscribe-mail>input::placeholder {
+    color: rgb(133, 133, 133);
+}
+
+
+.subscribe-mail>i {
+    color: rgb(128, 128, 128);
+    font-size: 1.3vmax;
+    position: absolute;
+    right: .5vmax;
+}
+
+
+/* ----------page1--------------- */
+
+.page1 {
+    width: 100vw;
+    /* height: 100vh; */
+    padding: 0 2vmax;
+    margin-top: 10vh;
+}
+
+.page1>h1 {
+    font: 700 7.6vmax "Gil";
+}
+
+.myname {
+    color: #FC626A;
+}
+
+.designation {
+    color: #51CDE7;
+}
+
+
+/* -----------page2---------- */
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vmax;
+    position: relative;
+
+}
+
+.page2>h1 {
+    font: 400 4vmax "Gil";
+    text-align: center;
+}
+
+.minimal {
+    font-family: "Mont-Alt";
+    color: #FC626A;
+}
+
+.page2>p {
+    font: 300 1vmax "Gil";
+    text-align: center;
+    margin: 1vmax 0;
+}
+
+.page2>button {
+    padding: .9vmax 1.5vmax;
+    border-radius: 5vmax;
+    border: none;
+    color: #fff;
+    font: 500 1vmax "Gil";
+    box-shadow: 0 0 1vmax #43C6E2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left, #43C6E2, rgb(133, 227, 248));
+    margin-top: .5vmax;
+    transition: 1s all;
+}
+
+.glow {
+    position: absolute;
+    opacity: .3;
+}
+
+.purpleglow {
+    bottom: 20%;
+    left: 0;
+}
+
+.blueglow {
+    top: 20%;
+    right: 20%;
+    width: 15vmax;
+
+}
+
+.redglow {
+    bottom: 0;
+    right: 0;
+    width: 20vmax;
+}
+
+
+/* -----------page3-------------- */
+
+.page3 {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 5vmax 5vmax;
+
+}
+
+
+.page3-title {
+    font: 500 3vmax "Gil";
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vmax;
+    color: #4e4e4e;
+}
+
+.page3-title>hr {
+    margin-left: 2vmax;
+    width: 5vmax;
+    height: 0.1vmax;
+    background-color: rgb(204, 202, 202);
+    border: none;
+
+}
+
+.page3 > p {
+    font: 400 1.2vmax "Gil";
+    color: rgb(97, 96, 96);
+    margin-bottom: 5vmax;
+}
+
+.good {
+    color: #51CDE7;
+}
+
+
+.page3 .heading {
+    font: 500 5vmax "Gil";
+    color: #5D5D5D;
+    position: relative;
+    z-index: 1
+}
+
+.des-heading {
+    transform: translate(25%, 35%);
+}
+
+.page3-holder {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.box {
+    width: 70vw;
+    height: 8vmax;
+    background-color: rgb(248, 248, 248);
+    border-radius: .5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: 0 0 2vmax rgba(133, 227, 248, 0.2);
+}
+
+.dev-box {
+    width: 70vw !important;
+    transform: translate(8%, -30%);
+}
+
+.box>img {
+    width: 4vmax;
+}
+
+
+/* ----------page4--------------------- */
+.page4 {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 5vmax;
+}
+
+.page4-title {
+    font: 500 3vmax "Gil";
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vmax;
+    color: #4e4e4e;
+}
+
+.page4-title>hr {
+    margin-left: 2vmax;
+    width: 5vmax;
+    height: 0.1vmax;
+    background-color: rgb(204, 202, 202);
+    border: none;
+
+}
+
+.page4 > p {
+    font: 400 1.2vmax "Gil";
+    color: rgb(97, 96, 96);
+    margin-bottom: 5vmax;
+}
+
+.love {
+    color: #FC626A;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.image-wrapper  img {
+    display: flex;
+    width: 23vmax;
+    margin-bottom: 2vmax;
+}
+
+.internal-col1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.internal-col1 > img{
+    width: 10.5vmax;
+}
+
+/* .internal-col2{
+    flex-direction: column !important;
+} */
+
+.internal-col2 > img {
+    width: 10.5vmax;
+}
+
+.page4-subheading {
+    font: 500 9vmax "Gil";
+    line-height: 9vmax;
+    text-align: right;
+    transform: translateY(-50%);
+
+}
+
+.artwork {
+    color: #FC626A;
+}
+
+
+
+
+/* -------page5--------------- */
+
+.page5 {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 2vmax;
+    margin-top: 10vh;
+    background-color: #5E5E5E;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.page5>h1 {
+    font: 700 9vmax "Gil";
+}
+
+.mail {
+    color: #FC626A;
+}
+
+.instagram {
+    color: #F6BA53;
+}
+
+.linkedin {
+    color: #51CDE7;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 2vmax 0;
+    font-family: "Mont-Alt";
+    font-size: 1.2vmax;
+   
+}
+
+.author {
+    font-family: "Shaloems";
+    font-size: 4vmax;
+}
+
+footer > img {
+     width: 1.5vmax;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* ------------page3------------ */
+    .page3 {
+        width: 80vw;
+        margin: auto;
+        padding: 0;
+    }
+
+    .box {
+        justify-content: flex-start;
+        width: auto;
+        height: auto;
+        padding: 2vmax;
+    }
+
+    .box > img {
+        width: 8vw;
+        margin: 0 2vmax 2vmax 0;
+    }
+
+    .des-heading {
+        transform: translate(25%, 35%);
+    }
+
+    .dev-box {
+        transform: translate(8%, -15%);
+    }
+
+    
+    /* ---------page4--------- */
+
+    .page4 {
+        height: auto;
+    }
+
+    .image-wrapper {
+        flex-direction: column;
+    }
+
+
+    .image-wrapper > div {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page4-col3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page4-col3 > img {
+        width: 90vw !important;
+    }
+
+     .image-wrapper img {
+        width: 40vw;
+    } 
+
+
+    .internal-col1 {
+        width: 100%;
+    }
+
+
+}
