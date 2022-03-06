@@ -4,31 +4,31 @@
 }
 
 @font-face {
-    font-family: 'Mont-Alt';
+    font-family: 'Mont';
     src: url('/fonts/MONTSERRATALTERNATES-EXTRALIGHT.TTF');
 }
 
 @font-face {
     font-family: 'Gil';
-    src: url('./fonts/Gilroy/GILROY-BLACK.OTF');
+    src: url('./fonts/GILROY-BLACK.OTF');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Gil';
-    src: url('./fonts/Gilroy/GILROY-SEMIBOLD.OTF');
+    src: url('./fonts/GILROY-SEMIBOLD.OTF');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Gil';
-    src: url('./fonts/Gilroy/GILROY-MEDIUM.OTF');
+    src: url('./fonts/GILROY-MEDIUM.OTF');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Gil';
-    src: url('./fonts/Gilroy/GILROY-REGULAR.OTF');
+    src: url('./fonts/GILROY-REGULAR.OTF');
     font-weight: 300;
 }
 
@@ -173,7 +173,7 @@ nav>ul>li:hover {
 }
 
 .minimal {
-    font-family: "Mont-Alt";
+    font-family: "Mont";
     color: #FC626A;
 }
 
@@ -417,14 +417,14 @@ footer {
     display: flex;
     align-items: center;
     padding: 2vmax 0;
-    font-family: "Mont-Alt";
-    font-size: 1.2vmax;
+    /* font-family: "Mont";
+    font-size: 1.2vmax; */
+    font: normal 1.2vmax "Mont";
    
 }
 
 .author {
-    font-family: "Sha";
-    font-size: 4vmax;
+    font: normal 4vmax "Sha";
 }
 
 footer > img {
