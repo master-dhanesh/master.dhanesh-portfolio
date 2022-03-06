@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Shaloems';
+    font-family: 'Sha';
     src: url('/fonts/SHALOEMS.TTF');
 }
 
@@ -135,7 +135,6 @@ nav>ul>li:hover {
 
 .page1 {
     width: 100vw;
-    /* height: 100vh; */
     padding: 0 2vmax;
     margin-top: 10vh;
 }
@@ -157,7 +156,7 @@ nav>ul>li:hover {
 
 .page2 {
     width: 100vw;
-    height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,6 +169,7 @@ nav>ul>li:hover {
 .page2>h1 {
     font: 400 4vmax "Gil";
     text-align: center;
+    width: 55vw;
 }
 
 .minimal {
@@ -181,6 +181,7 @@ nav>ul>li:hover {
     font: 300 1vmax "Gil";
     text-align: center;
     margin: 1vmax 0;
+    width: 50vw;
 }
 
 .page2>button {
@@ -226,19 +227,17 @@ nav>ul>li:hover {
 
 .page3 {
     width: 100vw;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     padding: 5vmax 5vmax;
-
 }
 
 
 .page3-title {
     font: 500 3vmax "Gil";
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 1vmax;
     color: #4e4e4e;
@@ -390,7 +389,7 @@ nav>ul>li:hover {
     height: 100vh;
     padding: 0 2vmax;
     margin-top: 10vh;
-    background-color: #5E5E5E;
+    background-color: #414040;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -424,80 +423,12 @@ footer {
 }
 
 .author {
-    font-family: "Shaloems";
+    font-family: "Sha";
     font-size: 4vmax;
 }
 
 footer > img {
-     width: 1.5vmax;
+     width: 2vmax;
+     margin: 0 .5vmax;
 }
 
-
-@media screen and (max-width: 600px) {
-
-    /* ------------page3------------ */
-    .page3 {
-        width: 80vw;
-        margin: auto;
-        padding: 0;
-    }
-
-    .box {
-        justify-content: flex-start;
-        width: auto;
-        height: auto;
-        padding: 2vmax;
-    }
-
-    .box > img {
-        width: 8vw;
-        margin: 0 2vmax 2vmax 0;
-    }
-
-    .des-heading {
-        transform: translate(25%, 35%);
-    }
-
-    .dev-box {
-        transform: translate(8%, -15%);
-    }
-
-    
-    /* ---------page4--------- */
-
-    .page4 {
-        height: auto;
-    }
-
-    .image-wrapper {
-        flex-direction: column;
-    }
-
-
-    .image-wrapper > div {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .page4-col3{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .page4-col3 > img {
-        width: 90vw !important;
-    }
-
-     .image-wrapper img {
-        width: 40vw;
-    } 
-
-
-    .internal-col1 {
-        width: 100%;
-    }
-
-
-}
