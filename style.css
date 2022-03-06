@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Sha';
-    src: url('/fonts/SHALOEMS.OTF');
+    src: url('./fonts/SHALOEMS.OTF');
 }
 
 @font-face {
     font-family: 'Mont';
-    src: url('/fonts/MONTSERRATALTERNATES-EXTRALIGHT.OTF');
+    src: url('./fonts/MONTSERRATALTERNATES-EXTRALIGHT.OTF');
 }
 
 @font-face {
