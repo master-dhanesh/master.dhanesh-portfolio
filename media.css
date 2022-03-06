@@ -1,5 +1,10 @@
 @media screen and (max-width: 600px) {
 
+    body {
+        overflow-x: hidden !important;
+        width: 100vw;
+    }
+
     /* -------------------page1----------------- */
 
     .page1>h1 {
