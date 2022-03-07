@@ -438,7 +438,7 @@ footer > img {
 
 /* ----------------- for all----------------- */
 a {
-    color: inherit;
+    color: initial;
     text-decoration: none;
 }
 
