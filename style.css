@@ -429,6 +429,7 @@ footer {
 
 .author {
     font: normal 4vmax "Sha";
+    color: #fff !important;
 }
 
 footer > img {
