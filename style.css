@@ -302,6 +302,10 @@ nav>ul>li:hover {
     width: 4vmax;
 }
 
+.figmaimg {
+    width: 2.6vmax !important;
+}
+
 
 /* ----------page4--------------------- */
 .page4 {
@@ -432,3 +436,13 @@ footer > img {
      margin: 0 .5vmax;
 }
 
+/* ----------------- for all----------------- */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+
+    text-decoration: line-through;
+}
