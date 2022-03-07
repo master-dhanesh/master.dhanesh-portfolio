@@ -429,7 +429,6 @@ footer {
 
 .author {
     font: normal 4vmax "Sha";
-    color: #fff !important;
 }
 
 footer > img {
@@ -439,7 +438,7 @@ footer > img {
 
 /* ----------------- for all----------------- */
 a {
-    color: initial;
+    color: inherit !important;
     text-decoration: none;
 }
 
