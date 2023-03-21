@@ -50,7 +50,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: transparent  ;
+    background-color: transparent;
     width: .5vmax;
 }
 
@@ -58,24 +58,78 @@ body {
     background-color: #F2CC81;
 }
 
+/* ----------nav----------------- */
+
+nav {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vmax;
+    display: none;
+}
 
 .resume-btn {
-    position: fixed;
-    right: 2vmax;
-    top: 1vmax;
-    z-index: 1111;
     padding: .9vmax 1.5vmax;
     border-radius: 5vmax;
     border: none;
     color: #fff;
     font: 500 1vmax "GIl";
+    box-shadow: 0 0 2vmax #FC626A;
     cursor: pointer;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 2vmax #FC626A;
     background: linear-gradient(to right, #FE7D84, #FC626A);
     transition: 1s all;
 }
+
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+nav>ul>li {
+    color: #4e4e4e;
+    cursor: pointer;
+    margin: 0 1vmax;
+    font: 500 1vmax "Gil";
+    transition: .5s all;
+}
+
+nav>ul>li:hover {
+    color: black;
+}
+
+.subscribe-mail {
+    position: relative;
+}
+
+.subscribe-mail>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    padding: 0 2vmax .3vmax .5vmax;
+    font: 500 1vmax "Gil";
+
+}
+
+.subscribe-mail>input::placeholder {
+    color: rgb(133, 133, 133);
+}
+
+
+.subscribe-mail>i {
+    color: rgb(128, 128, 128);
+    font-size: 1.3vmax;
+    position: absolute;
+    right: .5vmax;
+}
+
 
 /* ----------page1--------------- */
 
@@ -130,54 +184,24 @@ body {
     width: 50vw;
 }
 
-.page2-btns > button:first-of-type{
-    box-shadow: 0 0 1vmax #43C6E2;
-    background: linear-gradient(to left, #43C6E2, rgb(133, 227, 248));
-
-}
-
-.page2-btns>button {
+.page2>button {
     padding: .9vmax 1.5vmax;
     border-radius: 5vmax;
     border: none;
     color: #fff;
     font: 500 1vmax "Gil";
+    box-shadow: 0 0 1vmax #43C6E2;
     cursor: pointer;
     display: flex;
     align-items: center;
+    background: linear-gradient(to left, #43C6E2, rgb(133, 227, 248));
     margin-top: .5vmax;
     transition: 1s all;
-}
-
-.page2-btns {
-    display: flex;
-}
-
-.page2-btns > button:first-of-type{
-    box-shadow: 0 0 1vmax #43C6E2;
-    background: linear-gradient(to left, #43C6E2, rgb(133, 227, 248));
-    margin-right: 2vmax;
-}
-
-.page2-btns > button:last-of-type{
-    box-shadow: 0 0 2vmax #FC626A;
-    background: linear-gradient(to right, #FE7D84, #FC626A);
-    
-}
-
-.page2-btns > button:last-of-type a{
-    display: flex;
-    align-items: center;
-}
-
-.page2-btns > button:last-of-type > a > i {
-    font-size: 1.5vmax;
 }
 
 .glow {
     position: absolute;
     opacity: .3;
-    z-index: -11;
 }
 
 .purpleglow {
@@ -339,6 +363,10 @@ body {
     width: 10.5vmax;
 }
 
+/* .internal-col2{
+    flex-direction: column !important;
+} */
+
 .internal-col2 > img {
     width: 10.5vmax;
 }
@@ -412,9 +440,9 @@ footer > img {
 a {
     color: inherit !important;
     text-decoration: none;
-    transition: .5s all;
 }
 
 a:hover {
+
     text-decoration: line-through;
 }
