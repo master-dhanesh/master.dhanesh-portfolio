@@ -1,34 +1,34 @@
 @font-face {
-    font-family: 'Sha';
-    src: url('./fonts/SHALOEMS.otf');
+    font-family: "Sha";
+    src: url("./fonts/SHALOEMS.otf");
 }
 
 @font-face {
-    font-family: 'Mont';
-    src: url('./fonts/MONTSERRATALTERNATES-EXTRALIGHT.otf');
+    font-family: "Mont";
+    src: url("./fonts/MONTSERRATALTERNATES-EXTRALIGHT.otf");
 }
 
 @font-face {
-    font-family: 'Gil';
-    src: url('./fonts/GILROY-BLACK.OTF');
+    font-family: "Gil";
+    src: url("./fonts/GILROY-BLACK.OTF");
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Gil';
-    src: url('./fonts/GILROY-SEMIBOLD.OTF');
+    font-family: "Gil";
+    src: url("./fonts/GILROY-SEMIBOLD.OTF");
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Gil';
-    src: url('./fonts/GILROY-MEDIUM.OTF');
+    font-family: "Gil";
+    src: url("./fonts/GILROY-MEDIUM.OTF");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Gil';
-    src: url('./fonts/GILROY-REGULAR.OTF');
+    font-family: "Gil";
+    src: url("./fonts/GILROY-REGULAR.OTF");
     font-weight: 300;
 }
 
@@ -45,26 +45,25 @@ body {
 }
 
 body {
-    overflow-x: hidden ;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    background-color: transparent  ;
-    width: .5vmax;
+    background-color: transparent;
+    width: 0.5vmax;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #F2CC81;
+    background-color: #f2cc81;
 }
-
 
 .resume-btn {
     position: fixed;
     right: 2vmax;
     top: 1vmax;
     z-index: 1111;
-    padding: .9vmax 1.5vmax;
+    padding: 0.9vmax 1.5vmax;
     border-radius: 5vmax;
     border: none;
     color: #fff;
@@ -72,8 +71,8 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 2vmax #FC626A;
-    background: linear-gradient(to right, #FE7D84, #FC626A);
+    box-shadow: 0 0 2vmax #fc626a;
+    background: linear-gradient(to right, #fe7d84, #fc626a);
     transition: 1s all;
 }
 
@@ -81,22 +80,34 @@ body {
 
 .page1 {
     width: 100vw;
+    height: 100vh;
     padding: 0 2vmax;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
+    background-image: url(./images/page1-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.page1>h1 {
-    font: 700 7.6vmax "Gil";
+.page1 > h1 {
+    font: 700 4vmax "Gil";
+    color: #fff;
 }
 
 .myname {
-    color: #FC626A;
+    color: #fc626a;
+    font-size: 5vmax;
+    font-weight: 900;
+    line-height: 3vmax;
 }
 
 .designation {
-    color: #51CDE7;
+    color: #51cde7;
 }
-
 
 /* -----------page2---------- */
 
@@ -109,10 +120,9 @@ body {
     justify-content: center;
     padding: 0 2vmax;
     position: relative;
-
 }
 
-.page2>h1 {
+.page2 > h1 {
     font: 400 4vmax "Gil";
     text-align: center;
     width: 55vw;
@@ -120,24 +130,23 @@ body {
 
 .minimal {
     font-family: "Mont";
-    color: #FC626A;
+    color: #fc626a;
 }
 
-.page2>p {
+.page2 > p {
     font: 300 1vmax "Gil";
     text-align: center;
     margin: 1vmax 0;
     width: 50vw;
 }
 
-.page2-btns > button:first-of-type{
-    box-shadow: 0 0 1vmax #43C6E2;
-    background: linear-gradient(to left, #43C6E2, rgb(133, 227, 248));
-
+.page2-btns > button:first-of-type {
+    box-shadow: 0 0 1vmax #43c6e2;
+    background: linear-gradient(to left, #43c6e2, rgb(133, 227, 248));
 }
 
-.page2-btns>button {
-    padding: .9vmax 1.5vmax;
+.page2-btns > button {
+    padding: 0.9vmax 1.5vmax;
     border-radius: 5vmax;
     border: none;
     color: #fff;
@@ -145,7 +154,7 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin-top: .5vmax;
+    margin-top: 0.5vmax;
     transition: 1s all;
 }
 
@@ -153,19 +162,18 @@ body {
     display: flex;
 }
 
-.page2-btns > button:first-of-type{
-    box-shadow: 0 0 1vmax #43C6E2;
-    background: linear-gradient(to left, #43C6E2, rgb(133, 227, 248));
+.page2-btns > button:first-of-type {
+    box-shadow: 0 0 1vmax #43c6e2;
+    background: linear-gradient(to left, #43c6e2, rgb(133, 227, 248));
     margin-right: 2vmax;
 }
 
-.page2-btns > button:last-of-type{
-    box-shadow: 0 0 2vmax #FC626A;
-    background: linear-gradient(to right, #FE7D84, #FC626A);
-    
+.page2-btns > button:last-of-type {
+    box-shadow: 0 0 2vmax #fc626a;
+    background: linear-gradient(to right, #fe7d84, #fc626a);
 }
 
-.page2-btns > button:last-of-type a{
+.page2-btns > button:last-of-type a {
     display: flex;
     align-items: center;
 }
@@ -176,7 +184,7 @@ body {
 
 .glow {
     position: absolute;
-    opacity: .3;
+    opacity: 0.3;
     z-index: -11;
 }
 
@@ -189,7 +197,6 @@ body {
     top: 20%;
     right: 20%;
     width: 15vmax;
-
 }
 
 .redglow {
@@ -197,7 +204,6 @@ body {
     right: 0;
     width: 20vmax;
 }
-
 
 /* -----------page3-------------- */
 
@@ -209,7 +215,6 @@ body {
     padding: 5vmax 5vmax;
 }
 
-
 .page3-title {
     font: 500 3vmax "Gil";
     display: flex;
@@ -219,13 +224,12 @@ body {
     color: #4e4e4e;
 }
 
-.page3-title>hr {
+.page3-title > hr {
     margin-left: 2vmax;
     width: 5vmax;
     height: 0.1vmax;
     background-color: rgb(204, 202, 202);
     border: none;
-
 }
 
 .page3 > p {
@@ -235,15 +239,14 @@ body {
 }
 
 .good {
-    color: #51CDE7;
+    color: #51cde7;
 }
-
 
 .page3 .heading {
     font: 500 5vmax "Gil";
-    color: #5D5D5D;
+    color: #5d5d5d;
     position: relative;
-    z-index: 1
+    z-index: 1;
 }
 
 .des-heading {
@@ -261,7 +264,7 @@ body {
     width: 70vw;
     height: 8vmax;
     background-color: rgb(248, 248, 248);
-    border-radius: .5vmax;
+    border-radius: 0.5vmax;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -274,14 +277,13 @@ body {
     transform: translate(8%, -30%);
 }
 
-.box>img {
+.box > img {
     width: 4vmax;
 }
 
 .figmaimg {
     width: 2.6vmax !important;
 }
-
 
 /* ----------page4--------------------- */
 .page4 {
@@ -298,13 +300,12 @@ body {
     color: #4e4e4e;
 }
 
-.page4-title>hr {
+.page4-title > hr {
     margin-left: 2vmax;
     width: 5vmax;
     height: 0.1vmax;
     background-color: rgb(204, 202, 202);
     border: none;
-
 }
 
 .page4 > p {
@@ -314,7 +315,7 @@ body {
 }
 
 .love {
-    color: #FC626A;
+    color: #fc626a;
 }
 
 .image-wrapper {
@@ -322,9 +323,7 @@ body {
     justify-content: space-between;
 }
 
-
-
-.image-wrapper  img {
+.image-wrapper img {
     display: flex;
     width: 23vmax;
     margin-bottom: 2vmax;
@@ -335,7 +334,7 @@ body {
     justify-content: space-between;
 }
 
-.internal-col1 > img{
+.internal-col1 > img {
     width: 10.5vmax;
 }
 
@@ -348,15 +347,11 @@ body {
     line-height: 9vmax;
     text-align: right;
     transform: translateY(-50%);
-
 }
 
 .artwork {
-    color: #FC626A;
+    color: #fc626a;
 }
-
-
-
 
 /* -------page5--------------- */
 
@@ -373,20 +368,20 @@ body {
     justify-content: flex-end;
 }
 
-.page5>h1 {
+.page5 > h1 {
     font: 700 9vmax "Gil";
 }
 
 .mail {
-    color: #FC626A;
+    color: #fc626a;
 }
 
 .instagram {
-    color: #F6BA53;
+    color: #f6ba53;
 }
 
 .linkedin {
-    color: #51CDE7;
+    color: #51cde7;
 }
 
 footer {
@@ -396,7 +391,6 @@ footer {
     /* font-family: "Mont";
     font-size: 1.2vmax; */
     font: normal 1.2vmax "Mont";
-   
 }
 
 .author {
@@ -404,15 +398,15 @@ footer {
 }
 
 footer > img {
-     width: 2vmax;
-     margin: 0 .5vmax;
+    width: 2vmax;
+    margin: 0 0.5vmax;
 }
 
 /* ----------------- for all----------------- */
 a {
     color: inherit !important;
     text-decoration: none;
-    transition: .5s all;
+    transition: 0.5s all;
 }
 
 a:hover {
